@@ -1,0 +1,73 @@
+/* Variabili colore per facile modifica futura */
+:root {
+    --rosso-dadda: #E32636;
+    --arancione-dadda: #FF8C00;
+    --bg-color: #fffbf5;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    grid-column: 2; /* Posizionato nella colonna centrale */
+    margin: 0;
+    color: var(--rosso-dadda);
+    text-transform: uppercase;
+    text-align: center; /* Forza il testo al centro della colonna 2 */
+}
+.spacer {
+    grid-column: 3; /* Serve a bilanciare il logo e mantenere il titolo al centro */
+}
+
+h2 { 
+    color: var(--arancione-dadda); 
+    border-bottom: 2px solid var(--arancione-dadda);
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.header-container {
+    display: grid;
+    /* Colonna 1: logo (larghezza fissa) | Colonna 2: titolo (ocupa lo spazio centrale) */
+    grid-template-columns: 130px 1fr 130px; 
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.logo {
+    grid-column: 1; /* Posizionato nella prima colonna */
+    width: 130px;
+    height: auto;
+    filter: brightness(0.95) contrast(1.1);
+}
+.pizza-item { 
+    margin-bottom: 20px; 
+}
+
+.pizza-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nome-pizza {
+    color: var(--rosso-dadda);
+}
+
+.prezzo { 
+    color: var(--arancione-dadda); 
+}
+
+.ingredienti {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
