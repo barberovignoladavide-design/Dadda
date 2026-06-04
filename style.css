@@ -14,7 +14,7 @@ body {
     margin: 40px auto;
     padding: 20px;
 }
-@media (max-width: 600px) {
+
 .header-container {
     display: grid;
     /* Colonna 1: logo (larghezza fissa) | Colonna 2: titolo (ocupa lo spazio centrale) */
@@ -31,7 +31,7 @@ h1 {
     text-align: center; /* Forza il testo al centro della colonna 2 */
     font-size: 1rem;
 }
-}
+
 .spacer {
     grid-column: 3; /* Serve a bilanciare il logo e mantenere il titolo al centro */
 }
