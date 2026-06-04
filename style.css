@@ -18,7 +18,7 @@ body {
 .header-container {
     display: grid;
     /* Colonna 1: logo (larghezza fissa) | Colonna 2: titolo (ocupa lo spazio centrale) */
-    grid-template-columns: 80px 1fr 80px; 
+    grid-template-columns: 130px 1fr 130px; 
     align-items: center;
     padding: 20px;
     gap: 10px;
